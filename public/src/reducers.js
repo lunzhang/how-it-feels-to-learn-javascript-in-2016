@@ -1,18 +1,18 @@
 import * as actions from './actions.js';
 
 const initalState = {
-  message: ''
+  message: '',
 };
 
-function appReducer(state=initalState, action){
-  switch(action.type){
+function appReducer(state = initalState, action) {
+  switch (action.type) {
     case actions.ON_MESSAGE:
       return Object.assign({}, state, {
-        message: action.message
+        message: action.message,
       });
   }
 
   return state;
-};
+}
 
 export default appReducer;

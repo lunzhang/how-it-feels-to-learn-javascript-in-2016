@@ -11,8 +11,16 @@
 
 <div>
   <p>clone repo</p>
-  <p>```npm install```</p>
-  <p>```npm run dev```</p>
+  <p>
+  ```
+  npm install
+  ```
+  </p>
+  <p>
+  ```
+  npm run dev
+  ```
+  </p>
   <p>Navigate to http://localhost:8080/public/ </p>
 </div>
 
