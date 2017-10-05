@@ -10,18 +10,10 @@
 <h1> Directions </h1>
 
 <div>
-  <p>clone repo</p>
-  <p>
-  ```
-  npm install
-  ```
-  </p>
-  <p>
-  ```
-  npm run dev
-  ```
-  </p>
-  <p>Navigate to http://localhost:8080/public/ </p>
+  <p>1. clone repo</p>
+  <p>2. npm install </p>
+  <p>3. npm run dev </p>
+  <p>4. Navigate to http://localhost:8080/public/ </p>
 </div>
 
 <h1> Technologies </h1>
