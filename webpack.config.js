@@ -7,8 +7,7 @@ module.exports = [{
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public/build'),
-    publicPath: '/public/build/',
+    path: path.resolve(__dirname, 'public/build')
   },
   module: {
     loaders: [
@@ -43,8 +42,7 @@ module.exports = [{
   },
   output: {
     filename: 'style.js',
-    path: path.resolve(__dirname, 'public/build'),
-    publicPath: '/public/build/',
+    path: path.resolve(__dirname, 'public/build')
   },
   module: {
     loaders: [
