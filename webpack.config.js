@@ -31,7 +31,9 @@ module.exports = [{
     ],
   },
   devServer: {
+    contentBase: 'public',
     inline: true,
+    progress: true,
     port: 8080,
     historyApiFallback: true,
   }

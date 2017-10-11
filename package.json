@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "start nodemon --watch server server/index.js && start webpack-dev-server --progress",
+    "dev": "start nodemon --watch server server/index.js && start webpack-dev-server",
     "build": "webpack",
     "lint": "./node_modules/.bin/eslint ./public --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
