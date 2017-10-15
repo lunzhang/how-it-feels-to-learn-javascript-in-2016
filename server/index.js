@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const fs = require('fs');
 
-const helloRouter = require(__dirname + '/../routes/hello.route');
+const helloRouter = require(__dirname + '/routes/hello.route');
 const configPort = require(__dirname + '/../config.json').port;
 
 const app = express();
