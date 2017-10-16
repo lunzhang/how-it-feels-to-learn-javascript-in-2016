@@ -12,8 +12,9 @@
 <div>
   <p>1. clone repo</p>
   <p>2. npm install </p>
-  <p>3. npm run dev </p>
-  <p>4. Navigate to http://localhost:8080 </p>
+  <p>3. npm run build </p>
+  <p>4. npm run dev </p>
+  <p>5. Navigate to http://localhost:8080 </p>
 </div>
 
 <h1> Technologies </h1>
