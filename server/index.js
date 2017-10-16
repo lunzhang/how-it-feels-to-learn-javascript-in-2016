@@ -1,22 +1,25 @@
-var express = require('express');
-var app = express();
-var server = require('http').Server(app);
-var path = require('path');
-var port = process.env.PORT || 80;
-var fs = require('fs');
+const path = require('path');
+const express = require('express');
+const fs = require('fs');
+
+const helloRouter = require(__dirname + '/routes/hello.route');
+const configPort = require(__dirname + '/../config.json').port;
+
+const app = express();
+const port = process.env.PORT || configPort;
+const server = require('http').Server(app);
 
 // allow cors
-app.use(function(req, res, next) {
+app
+.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
-});
-
-// simple hello route
-app.get('/hello', function(req, res) {
-  res.send('Hello World');
-});
+})
+.use(helloRouter);
 
 // set port and start server
 app.set('port', port);
-server.listen(port);
+server.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
