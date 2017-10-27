@@ -3,8 +3,14 @@ module.exports = {
     "browser": true,
     "node": true
   },
-  "extends": "airbnb-base",
-  "plugins": ["react"],
+  "extends": [
+    "airbnb-base",
+    "plugin:flowtype/recommended"
+  ],
+  "plugins": [
+    "react",
+    "flowtype"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
